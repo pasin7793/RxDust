@@ -26,11 +26,11 @@ final class DustCell: BaseTableViewCell<AirQuality>{
     }
     private func setLayout(){
         sidoNameLabel.snp.makeConstraints {
-            $0.leading.equalTo(self.snp.leading).offset(3)
+            $0.leading.equalToSuperview()
             $0.centerY.equalToSuperview()
         }
         stationNameLabel.snp.makeConstraints {
-            $0.trailing.equalTo(self.snp.trailing).inset(15)
+            $0.trailing.equalToSuperview().inset(5)
             $0.centerY.equalToSuperview()
         }
         dataTimeLabel.snp.makeConstraints {

@@ -44,5 +44,6 @@ final class DustVC: baseVC<DustReactor>{
                 cell.model = element
             }
             .disposed(by: disposeBag)
+        
     }
 }

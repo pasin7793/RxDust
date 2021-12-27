@@ -16,7 +16,7 @@ extension AirQualityAPI: TargetType{
         return URL(string: "https://bigdata.gwangju.go.kr/gjAPI/getAtmosphere/getAtmospherelist.rd?apiSrvCd=0048&baseYmd=20210928&hour=05&numOfRow=20&pageNo=1")!
     }
     var path: String {
-        switch self {
+        switch self  {
         case .fetchAirQuality:
             return "/"
         }

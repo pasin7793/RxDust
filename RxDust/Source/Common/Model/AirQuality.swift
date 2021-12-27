@@ -7,11 +7,15 @@
 
 import Foundation
 
+struct AirQualityResponse: Codable{
+    let resultCode: Int
+    let resultMsg: String
+    let items: [AirQuality]
+}
+
 struct AirQuality: Codable{
     let stationName: String //지역명
     let dataTime: String //측정 날짜
     let pm10Value: Int //미세먼지 농도
     let sidoName: String //시도명 (광주)
 }
-
-
