@@ -19,6 +19,7 @@ class baseVC<T: Reactor>:UIViewController{
         addView()
         setLayout()
         configureVC()
+
     }
     init(reactor: T){
         super.init(nibName: nil, bundle: nil)

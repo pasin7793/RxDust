@@ -19,10 +19,10 @@ final class DustReactor: Reactor,Stepper{
         case fetchAirQuality
     }
     enum Mutation{
-        case setAirQuality(_ airQuality: [AirQuality])
+        case setAirQuality(_ airQuality: [AirQualityItem])
     }
     struct State{
-        var airQuality: [AirQuality]?
+        var airQuality: [AirQualityItem]?
     }
     var initialState: State = State()
 }
@@ -51,7 +51,8 @@ private extension DustReactor{
     func fetchAirQuality() -> Observable<Mutation>{
         return NetworkManager.shared.fetchAirQuality()
             .filterSuccessfulStatusCodes()
-            .map([AirQuality].self)
+            .map(AirQualityResponse.self)
+            .map{ $0.response.body.items ?? [] }
             .catch { [weak self] err in
                 print(err.localizedDescription)
                 self?.steps.accept(TestStep.alert(title: "DustInGwangju", message: "몰?루"))

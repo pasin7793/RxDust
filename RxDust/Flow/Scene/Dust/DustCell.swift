@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-final class DustCell: BaseTableViewCell<AirQuality>{
+final class DustCell: BaseTableViewCell<AirQualityItem>{
     static let identifier = "Dust"
     
     private lazy var stationNameLabel = UILabel()
@@ -26,28 +26,26 @@ final class DustCell: BaseTableViewCell<AirQuality>{
     }
     private func setLayout(){
         sidoNameLabel.snp.makeConstraints {
-            $0.leading.equalToSuperview()
+            $0.left.equalTo(bounds.width*0.1)
             $0.centerY.equalToSuperview()
         }
         stationNameLabel.snp.makeConstraints {
-            $0.trailing.equalToSuperview().inset(5)
+            $0.left.equalTo(sidoNameLabel.snp.right).offset(bounds.width*0.09)
             $0.centerY.equalToSuperview()
         }
         dataTimeLabel.snp.makeConstraints {
             $0.centerY.equalToSuperview()
-            $0.leading.equalTo(sidoNameLabel.snp.trailing).offset(7)
-            $0.trailing.equalTo(stationNameLabel.snp.leading).inset(7)
+            $0.left.equalTo(stationNameLabel.snp.right).offset(20)
         }
         valueLabel.snp.makeConstraints{
             $0.centerY.equalToSuperview()
-            $0.leading.equalTo(sidoNameLabel.snp.trailing).offset(9)
-            $0.trailing.equalTo(stationNameLabel.snp.leading).inset(9)
+            $0.left.equalTo(bounds.width*1.07)
         }
     }
-    override func bind(_ model: AirQuality) {
+    override func bind(_ model: AirQualityItem) {
         sidoNameLabel.text = model.sidoName
         stationNameLabel.text = model.stationName
         dataTimeLabel.text = model.dataTime
-        valueLabel.text = "\(model.pm10Value)"
+        valueLabel.text = "\(model.pm10Value)㎍/㎥"
     }
 }

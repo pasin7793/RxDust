@@ -18,7 +18,7 @@ extension AirQualityAPI: TargetType{
     var path: String {
         switch self  {
         case .fetchAirQuality:
-            return "/"
+            return ""
         }
     }
     
