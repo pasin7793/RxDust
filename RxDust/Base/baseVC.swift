@@ -14,7 +14,11 @@ class baseVC<T: Reactor>:UIViewController{
     
     @available(*, unavailable)
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
+        view.backgroundColor = .white
+        addView()
+        setLayout()
+        configureVC()
     }
     init(reactor: T){
         super.init(nibName: nil, bundle: nil)

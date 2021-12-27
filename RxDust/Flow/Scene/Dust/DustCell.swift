@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-final class DustCell: baseTableViewCell<AirQuality>{
+final class DustCell: BaseTableViewCell<AirQuality>{
     static let identifier = "Dust"
     
     private let stationNameLabel = UILabel()
