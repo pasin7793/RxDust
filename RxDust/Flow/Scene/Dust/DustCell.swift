@@ -11,10 +11,10 @@ import SnapKit
 final class DustCell: BaseTableViewCell<AirQuality>{
     static let identifier = "Dust"
     
-    private let stationNameLabel = UILabel()
-    private let dataTimeLabel = UILabel()
-    private let valueLabel = UILabel()
-    private let sidoNameLabel = UILabel()
+    private lazy var stationNameLabel = UILabel()
+    private lazy var dataTimeLabel = UILabel()
+    private lazy var valueLabel = UILabel()
+    private lazy var sidoNameLabel = UILabel()
     
     override func configureCell() {
         super.configureCell()

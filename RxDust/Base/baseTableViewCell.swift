@@ -23,9 +23,7 @@ class BaseTableViewCell<T>: UITableViewCell{
         super.prepareForReuse()
         reuse()
     }
-    func reuse(){
-        
-    }
+    func reuse() { }
     func configureCell() {
         selectionStyle = .none
         

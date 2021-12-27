@@ -23,8 +23,6 @@
 		94F41354277835CB00441118 /* baseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F41353277835CB00441118 /* baseVC.swift */; };
 		94F41356277835E300441118 /* DustCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F41355277835E300441118 /* DustCell.swift */; };
 		94F4135A2778AE2E00441118 /* baseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F413592778AE2E00441118 /* baseTableViewCell.swift */; };
-		94F4135D277946BE00441118 /* Assets+TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F4135C277946BE00441118 /* Assets+TestApp.swift */; };
-		94F413612779470900441118 /* Bundle+TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F413602779470900441118 /* Bundle+TestApp.swift */; };
 		9F96EDB1A439CD0E12CA729C /* Pods_RxDust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B550F8C39BAA45F51B669A95 /* Pods_RxDust.framework */; };
 		BC615A88FDA96082C82F5221 /* Pods_RxDust_RxDustUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20BB53A78F2878A750141A1 /* Pods_RxDust_RxDustUITests.framework */; };
 		DF2A34C188E1BF4D4396232C /* Pods_RxDustTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785E00A23C4AD686ECFB9BEC /* Pods_RxDustTests.framework */; };
@@ -74,8 +72,6 @@
 		94F41353277835CB00441118 /* baseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseVC.swift; sourceTree = "<group>"; };
 		94F41355277835E300441118 /* DustCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DustCell.swift; sourceTree = "<group>"; };
 		94F413592778AE2E00441118 /* baseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseTableViewCell.swift; sourceTree = "<group>"; };
-		94F4135C277946BE00441118 /* Assets+TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Assets+TestApp.swift"; sourceTree = "<group>"; };
-		94F413602779470900441118 /* Bundle+TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+TestApp.swift"; sourceTree = "<group>"; };
 		9CFD78934DEE18CFD1F49D25 /* Pods-RxDust.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxDust.release.xcconfig"; path = "Target Support Files/Pods-RxDust/Pods-RxDust.release.xcconfig"; sourceTree = "<group>"; };
 		B550F8C39BAA45F51B669A95 /* Pods_RxDust.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxDust.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C20BB53A78F2878A750141A1 /* Pods_RxDust_RxDustUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxDust_RxDustUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,7 +158,6 @@
 		94F413302776148100441118 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				94F4135B2779469F00441118 /* Derived */,
 				94F413322776151700441118 /* Common */,
 				94F413362776217400441118 /* Network */,
 				94EE989E2771C22D009A568A /* App */,
@@ -288,15 +283,6 @@
 				94F413592778AE2E00441118 /* baseTableViewCell.swift */,
 			);
 			path = Base;
-			sourceTree = "<group>";
-		};
-		94F4135B2779469F00441118 /* Derived */ = {
-			isa = PBXGroup;
-			children = (
-				94F4135C277946BE00441118 /* Assets+TestApp.swift */,
-				94F413602779470900441118 /* Bundle+TestApp.swift */,
-			);
-			path = Derived;
 			sourceTree = "<group>";
 		};
 		B580ABF871D142B08E773542 /* Frameworks */ = {
@@ -565,7 +551,6 @@
 				94F4134727778ECE00441118 /* DustFlow.swift in Sources */,
 				94F4134F2777909C00441118 /* NetworkManager.swift in Sources */,
 				94EE986F2771C20D009A568A /* AppDelegate.swift in Sources */,
-				94F413612779470900441118 /* Bundle+TestApp.swift in Sources */,
 				94F413512777928800441118 /* DustReactor.swift in Sources */,
 				94F41356277835E300441118 /* DustCell.swift in Sources */,
 				94F413382776218C00441118 /* AirQualityAPI.swift in Sources */,
@@ -574,7 +559,6 @@
 				94EE98712771C20D009A568A /* SceneDelegate.swift in Sources */,
 				94F4134D2777906A00441118 /* DustVC.swift in Sources */,
 				94F413422776288500441118 /* TestStep.swift in Sources */,
-				94F4135D277946BE00441118 /* Assets+TestApp.swift in Sources */,
 				94F41354277835CB00441118 /* baseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
